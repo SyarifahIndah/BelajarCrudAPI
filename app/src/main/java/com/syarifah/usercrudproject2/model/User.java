@@ -6,13 +6,13 @@ public class User {
     @SerializedName("id")
     private String id;
 
-    @SerializedName("Name")
+    @SerializedName("name")
     private String name;
 
-    @SerializedName("Email")
+    @SerializedName("email")
     private String email;
 
-    public User(){
+    public User(){}
         public User(String id, String name, String email){
             this.id = id;
             this.name = name;
@@ -42,4 +42,4 @@ public class User {
     }
 
 
-}
+

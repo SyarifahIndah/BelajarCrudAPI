@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textView2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#97D0EA"
+        android:gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:text="Buat Data Baru"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email : "
+        android:paddingTop="50dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewfirstname"
+        android:layout_width="144dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textViewEmail"
+        android:text="First Name : "
+        android:paddingTop="10dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewlastname"
+        android:layout_width="144dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textViewfirstname"
+        android:text="Last Name : "
+        android:paddingTop="10dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewgender"
+        android:layout_width="144dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textViewlastname"
+        android:text="Gender: "
+        android:paddingTop="10dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editEmail"
+        android:hint="email"
+        android:layout_toRightOf="@+id/textViewEmail"
+        android:layout_alignBaseline="@+id/textViewEmail"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editfirstname"
+        android:hint="nama depan"
+        android:layout_toRightOf="@+id/textViewfirstname"
+        android:layout_alignBaseline="@+id/textViewfirstname"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editlastname"
+        android:hint="nama belakang"
+        android:layout_toRightOf="@+id/textViewlastname"
+        android:layout_alignBaseline="@+id/textViewlastname"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editgender"
+        android:hint="jenis kelamin"
+        android:layout_toRightOf="@+id/textViewgender"
+        android:layout_alignBaseline="@+id/textViewgender"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnSimpan"
+        android:text="Simpan"
+        />
+
+</RelativeLayout>
